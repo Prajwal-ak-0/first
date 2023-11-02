@@ -16,6 +16,11 @@
 		1858392C2AEA33F100AA7D3E /* firstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858392B2AEA33F100AA7D3E /* firstTests.swift */; };
 		185839362AEA33F100AA7D3E /* firstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185839352AEA33F100AA7D3E /* firstUITests.swift */; };
 		185839382AEA33F100AA7D3E /* firstUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185839372AEA33F100AA7D3E /* firstUITestsLaunchTests.swift */; };
+		18E8BF9E2AF377FD00C9CB11 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8BF9D2AF377FD00C9CB11 /* firstViewController.swift */; };
+		18E8BFA02AF3781400C9CB11 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E8BF9F2AF3781400C9CB11 /* secondViewController.swift */; };
+		18E8BFA32AF379EB00C9CB11 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18E8BFA12AF379EB00C9CB11 /* video.mp4 */; };
+		18E8BFA42AF379EB00C9CB11 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18E8BFA22AF379EB00C9CB11 /* song.mp3 */; };
+		18E8BFA62AF37C4A00C9CB11 /* img.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18E8BFA52AF37C4A00C9CB11 /* img.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		185839312AEA33F100AA7D3E /* firstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		185839352AEA33F100AA7D3E /* firstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstUITests.swift; sourceTree = "<group>"; };
 		185839372AEA33F100AA7D3E /* firstUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18E8BF9D2AF377FD00C9CB11 /* firstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		18E8BF9F2AF3781400C9CB11 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		18E8BFA12AF379EB00C9CB11 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = ../../../Downloads/video.mp4; sourceTree = "<group>"; };
+		18E8BFA22AF379EB00C9CB11 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song.mp3; path = ../../../Downloads/song.mp3; sourceTree = "<group>"; };
+		18E8BFA52AF37C4A00C9CB11 /* img.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img.jpeg; path = ../../../Downloads/img.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +114,13 @@
 				185839182AEA33EE00AA7D3E /* ViewController.swift */,
 				1858391A2AEA33EE00AA7D3E /* Main.storyboard */,
 				1858391D2AEA33F100AA7D3E /* Assets.xcassets */,
+				18E8BFA52AF37C4A00C9CB11 /* img.jpeg */,
+				18E8BFA22AF379EB00C9CB11 /* song.mp3 */,
+				18E8BFA12AF379EB00C9CB11 /* video.mp4 */,
 				1858391F2AEA33F100AA7D3E /* LaunchScreen.storyboard */,
 				185839222AEA33F100AA7D3E /* Info.plist */,
+				18E8BF9D2AF377FD00C9CB11 /* firstViewController.swift */,
+				18E8BF9F2AF3781400C9CB11 /* secondViewController.swift */,
 			);
 			path = first;
 			sourceTree = "<group>";
@@ -232,8 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				185839212AEA33F100AA7D3E /* LaunchScreen.storyboard in Resources */,
+				18E8BFA42AF379EB00C9CB11 /* song.mp3 in Resources */,
 				1858391E2AEA33F100AA7D3E /* Assets.xcassets in Resources */,
 				1858391C2AEA33EE00AA7D3E /* Main.storyboard in Resources */,
+				18E8BFA32AF379EB00C9CB11 /* video.mp4 in Resources */,
+				18E8BFA62AF37C4A00C9CB11 /* img.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +279,8 @@
 				185839192AEA33EE00AA7D3E /* ViewController.swift in Sources */,
 				185839152AEA33EE00AA7D3E /* AppDelegate.swift in Sources */,
 				185839172AEA33EE00AA7D3E /* SceneDelegate.swift in Sources */,
+				18E8BFA02AF3781400C9CB11 /* secondViewController.swift in Sources */,
+				18E8BF9E2AF377FD00C9CB11 /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

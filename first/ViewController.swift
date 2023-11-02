@@ -10,17 +10,22 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    
     var numberOnScreen : Double = 0;
     var previousNumber : Double = 0;
     var MathOperation = false;
     var operation = 0;
 
     @IBAction func number(_ sender: UIButton) {
-        if MathOperation == true {
-            label.text = label!.text! + String(sender.tag-1)
+        
+        switch MathOperation {
+            
+        case true:
+            label.text = String(sender.tag-1)
             numberOnScreen=Double(label.text!)!
-            MathOperation = true
-        }else {
+            MathOperation = false
+            
+        default:
             label.text = label!.text! + String(sender.tag-1)
             numberOnScreen=Double(label.text!)!
         }
@@ -28,43 +33,66 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butttons(_ sender: UIButton) {
-        if label.text != "" && sender.tag != 11 && sender.tag != 16 {
+        
+        switch sender.tag {
             
-            previousNumber = Double(label.text!)!
+        case 11 :
             
-            if sender.tag == 12 {
-                label.text = "+"
-            } else if sender.tag == 13 {
-                label.text = "-"
-            } else if sender.tag == 14 {
-                label.text = "*"
-            } else if sender.tag == 15 {
-                label.text = "/"
-            }
-            label.text = ""
-            operation = sender.tag
-            MathOperation = true
-            
-        }
-        else if sender.tag == 16 {
-            if operation == 12 {
-                label.text = String(previousNumber+numberOnScreen)
-            }
-            else if operation == 13 {
-                label.text = String(previousNumber-numberOnScreen)
-            }
-            else if operation == 14 {
-                label.text = String(previousNumber*numberOnScreen)
-            }
-            else if operation == 15 {
-                label.text = String(previousNumber/numberOnScreen)
-            }
-        }
-        else if sender.tag == 11  {
             label.text!=""
             previousNumber = 0;
             numberOnScreen = 0;
             operation = 0;
+            
+        case 16 :
+            
+            switch operation {
+                
+            case 12 :
+                label.text = String(previousNumber+numberOnScreen)
+
+            case 13 :
+                
+                label.text = String(previousNumber-numberOnScreen)
+                
+            case 14 :
+                
+                label.text = String(previousNumber*numberOnScreen)
+                
+            case 15 :
+                
+                label.text = String(previousNumber/numberOnScreen)
+                
+            default:
+                
+                label.text = String(numberOnScreen)
+                
+            }
+            
+        default:
+            previousNumber = Double(label.text!)!
+            
+            switch sender.tag {
+                
+            case 12 :
+                label.text = "+"
+                
+            case 13 :
+                label.text = "-"
+                
+            case 14 :
+                label.text = "*"
+                
+            case 15 :
+                label.text = "/"
+                
+            default:
+                label.text = ""
+            }
+            
+            operation = sender.tag
+            MathOperation = true
+            
+            
         }
     }
     
